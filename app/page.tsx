@@ -40,7 +40,7 @@ export default function LostCBPage() {
     setLostCb(hasilLost);
 
     // DOWNTIME (dibulatkan ke atas)
-    let hasilDowntime = Math.ceil((hasilLost / rph) * 480);
+    let hasilDowntime = Math.ceil((hasilLost * 480) / rph80);
 
     if (hasilDowntime <= 0) {
       hasilDowntime = 0;
